@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 25%;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-group input,
+.input-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+}
+
+.input-group input:focus,
+.input-group select:focus {
+    border-color: #007bff;
+}
+
+.input-group label {
+    position: absolute;
+    top: -8px;
+    left: 10px;
+    background-color: #fff;
+    padding: 0 5px;
+    color: #999;
+}
+
+button {
+    width: 100%;
+    padding: 15px 20px; 
+    border: none;
+    border-radius: 5px; 
+    background-image: linear-gradient(to right, #007bff, #6699ff); 
+    color: #ffffff;
+    font-size: 16px; 
+    font-weight: bold; 
+    cursor: pointer;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); 
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+button:hover {
+    background-image: linear-gradient(to right, #0056b3, #007bff); /* Darker gradient on hover */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Increased shadow for a lifted effect */
+}
+
+
+.login-link {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.login-link a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
+

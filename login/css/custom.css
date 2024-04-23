@@ -1,0 +1,305 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Assistant', sans-serif;
+  background-color: #46320db0; /* Slightly off-white background for a softer look */
+  font-size: 18px;
+  line-height: 1.6; /* Improved readability */
+}
+
+.login-body{
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  background-image: url('./img/background.png'); /* Adjust the path as necessary */
+  background-size: cover; /* Cover the entire page */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  color: #381e0caf;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  box-sizing: border-box;
+     
+    
+}
+#wrapper{
+  width: 98%;
+    min-height: 600px;
+    padding:4px;
+    margin: 0 auto;
+    background-color: #bebcbc;
+}
+
+
+.icon {
+  width: 190px; /* Adjusts the width of the logo */
+  height: auto; /* Ensures the logo's height adjusts proportionally */
+  /* Add any additional styling for the icon here */
+}
+
+
+#menu{
+    height: 24px;
+    width: 98%;
+}
+#second-submenu{
+    height: 24px;
+    width: 98%;
+}
+#third-submenu{
+   height: 24px;
+    width: 98%;
+    text-align: right;
+}
+#menu a, #second-submenu a, #third-submenu a{
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+#menu a:hover, #second-submenu a:hover, #third-submenu a:hover{
+    text-decoration: none;
+    color: #4CAF50;
+    font-weight: bold;
+}
+#content{
+    width: 96%;
+    padding: 8px;
+    min-height: 600px;
+    margin: 4px auto;
+    background-color: #FFF;
+}
+#subcontent{
+    width: 98%;
+    padding: 4px;
+}
+.move-right{
+    float: right;
+}
+/* FORM */
+
+
+.input, select {
+  width: 100%;
+  padding: 12px 20px;
+  margin-bottom: 20px;
+  border: 1px solid #4d2613;
+  border-radius: 50px;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+
+.input:focus, select:focus {
+  outline: none;
+  border-color: #6e8efb;
+  box-shadow: 0 0 8px rgba(110, 142, 251, 0.8);
+}
+.input[type="submit"] {
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #6e8efb;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.input[type="submit"]:hover {
+  background-color: #5a7be0;
+}
+/* If inputs are within a flex container, ensure there's spacing around them */
+.input-group {
+  display: flex;
+  flex-wrap: wrap; /* Allows elements to wrap within the container */
+  gap: 20px; /* Adds space between elements in flex layouts */
+}
+
+
+input[type=submit] {
+  width: 100%;
+  background-color: #8e8c8c; /* Brighter blue for a vibrant call to action */
+  color: #ffffff;
+  border: none;
+  padding: 15px 0; /* Increased padding for a larger button */
+  margin-top: 30px; /* More space above the submit button */
+  cursor: pointer;
+  border-radius: 6px; /* Consistent border-radius */
+  font-weight: bold; /* Bold text */
+  letter-spacing: 0.05em; /* Subtle letter spacing */
+  transition: background-color 0.3s ease, transform 0.2s ease-out, box-shadow 0.2s ease; /* Enhanced transitions */
+}
+
+input[type=submit]:hover {
+  background-color: #0a0a0b; /* Darker shade on hover for depth */
+  transform: translateY(-3px); /* Slight lift effect */
+  box-shadow: 0 12px 24px rgba(0, 84, 255, 0.2); /* More pronounced shadow on hover */
+}
+
+#form-block {
+  border-radius: 20px; /* More pronounced rounded corners for modern feel */
+    background-color: #ffffff; /* Pure white background for the form */
+    padding: 40px; /* Increased padding for better spacing */
+    width: 80%; /* Optimal width for desktop viewing, consider responsiveness */
+    margin: 3% auto; /* Center form with vertical spacing */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+
+}
+
+#form-block #form-block-half{
+    width: 40%;
+    float: left;
+    padding: 20px;
+}
+
+#button-block {
+  clear: both;
+  padding: 20px;
+  text-align: center; /* Centering the button for a balanced look */
+  width: 100%; /* Adjusted to match padding adjustments */
+}
+
+/** end */
+
+#data-list {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#data-list td, #data-list th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#data-list tr:nth-child(even){background-color: #f2f2f2;}
+
+#data-list tr:hover {background-color: #ddd;}
+
+#data-list th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04AA6D;
+  color: white;
+}
+#login-block{
+  background: #ffffff;
+  padding: 40px 60px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  width: auto;
+  max-width: 400px;
+}
+
+#login-block h3 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  text-align: center;
+  color: #333;
+}
+
+#brand-block{
+  position: absolute; /* Positioning the block */
+  top: 0; /* At the top of the viewport */
+  left: 0; /* At the right of the viewport */
+  margin-left: 60px; /* Adding some space from the edges */
+  font-size: 30px;
+  font-family: "Protest Riot", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+#brand-block h2 {
+  color: #0a0a0a;
+  font-weight: 800;
+  transition: color 0.3s ease;
+}
+
+#brand-block h2:hover {
+  color: #81e6d9; /* Slightly lighter shade for hover effect */
+}
+
+
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+#error_notif {
+  background-color: #151111;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 40%;
+  margin: 20px auto;
+  z-index: 10; /* Ensure it's above other elements */
+  position: fixed; /* Fixed position to keep it in view */
+  top: 20px; /* 20px from the top of the viewport */
+  left: 0;
+  right: 0;
+}
+
+.error-message {
+  color: red;
+  transition: opacity 0.5s ease; /* Smooth transition for the opacity change */
+  opacity: 1; /* Start fully visible */
+}
+
+.hidden {
+  opacity: 0; /* Make it fully transparent */
+  visibility: hidden; /* Hide it after transition */
+  position: absolute; /* Ensures it doesn't take space when hidden */
+}
+
+.password-strength {
+  margin-top: 10px;
+}
+
+.password-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.input {
+  padding-right: 40px; /* Make room for the eye icon */
+}
+
+#toggle-password {
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
+  color: #6c757d; /* Subtle grey; adjust as needed */
+}
+
+.signin-button {
+  width: 100%;
+  background-color: #8e8c8c; /* Brighter blue for a vibrant call to action */
+  color: #ffffff;
+  border: none;
+  padding: 15px 0; /* Increased padding for a larger button */
+  margin-top: 30px; /* More space above the submit button */
+  cursor: pointer;
+  border-radius: 6px; /* Consistent border-radius */
+  font-weight: bold; /* Bold text */
+  letter-spacing: 0.05em; /* Subtle letter spacing */
+  transition: background-color 0.3s ease, transform 0.2s ease-out, box-shadow 0.2s ease; /* Enhanced transitions */
+}
+
+.signin-button:hover {
+  background-color: #0a0a0b; /* Darker shade on hover for depth */
+  transform: translateY(-3px); /* Slight lift effect */
+  box-shadow: 0 12px 24px rgba(0, 84, 255, 0.2); /* More pronounced shadow on hover */
+}
+
